@@ -1,0 +1,8 @@
+	a:link{color:#727272;text-decoration:none;}
+	a:hover{text-decoration:underline;}
+	#b{font-size: 14px;color: #b9f605;font-weight: 700;}
+	a.white:link{color:white;text-decoration: none;}
+	a.white:hover{color: #b9f605;text-decoration:underline;}
+	a.c:link{color: #fdb306;text-decoration: none;}
+	a.c:hover{color: #b9f605;text-decoration:underline;}
+	td{font-size: 14px;font-family:'Arial';color: gray;line-height: 2em;}
