@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>首页</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			body{
+				background-color: #F7F7F7;
+			}
+			#left{
+				border: 1px solid #F7F7F7;
+				float: left;
+				width: 270px;
+				height: 100%;
+			}
+			#center{
+				float: left;
+				width: 957px;
+			}
+			.one{
+				float: left;
+				width: 957px;
+				height: 60px;
+			}
+			.two{
+				float: left;
+				width: 150px;
+				height: 60px;
+				margin:20px;
+			}
+			.three{
+				margin-top: 30px;
+				margin-right: 200px;
+				float: right;
+				font-size: 20px;
+				text-align: center;
+				width: 400px;
+			}
+			form{
+				display: inline;
+			}
+			.four{
+				margin-top: 20px;
+				margin-bottom: 20px;
+				float: left;
+				width: 957px;
+				height: 39px;
+				background-image: url(images/list_bg1.png);
+			}
+			ul{
+				padding: 0px;
+				margin: 0px;
+				list-style-type: none;
+				overflow: hidden;
+			}
+			.li1{
+				float: left;
+				background-image: url(images/list_bg.png);
+			}
+			a.i:link,a.i:visited{
+				display: block;
+				padding: 8px;
+				text-decoration: none;
+				width: 100px;
+				font-weight: bold;
+				color: #FFFFFF;
+				text-align: center;
+			}
+			a.i:hover,a.i:active{
+				border-style: inset;
+				background-color: #4682B4;
+			}
+			.tu{
+				margin: 0px;
+				padding: 0px;
+			}
+			.five{
+				font-size: 14px;
+				float: left;
+				width: 189.8px;
+				border-width: 0.1px;
+				border-style: groove;
+				text-align: center;
+				height: 210px;
+				margin-top: -5px;
+				padding-top: 10px;
+			}
+			.shenghuo{
+				font-size: 13px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+			.six{
+				float: left;
+				width: 957px;
+				margin-top: 10px;
+				text-indent: 1em;
+			}
+			.span1{
+				font-size: 15px;
+				font-weight: bold;
+				color: #4682B4;
+			}
+			.span2{
+				font-weight: bold;
+				line-height: 25px;
+			}
+			.span3{
+				color: #32CD32;
+			}
+			.shenghuo0{
+				float: left;
+				width: 177.6px;
+				height: 100px;
+				padding-top: 5px;
+				padding-left: 60px;
+				border-width: 0.1px;
+				border-style: dotted;
+			}
+			.shenghuo1{
+				background-image: url(images/chuanyi.png);
+			}
+			.shenghuo2{
+				background-image: url(images/ziwai.png);
+			}
+			.shenghuo3{
+				background-image: url(images/lvyou.png);
+			}
+			.shenghuo4{
+				background-image: url(images/shushi.png);
+			}
+			.shenghuo5{
+				background-image: url(images/chenlian.png);
+			}
+			.shenghuo6{
+				background-image: url(images/xiche.png);
+			}
+			.shenghuo7{
+				background-image: url(images/fangshai.png);
+			}
+			.shenghuo8{
+				background-image: url(images/guomin.png);
+			}
+			.kuang{
+				float: left;
+				margin-top: 10px;
+				border: 0.1px solid #4682B4;
+			}
+			.wangzhan{
+				font-size: 15px;
+				font-weight: bold;
+				float: left;
+				width: 957px;
+				padding-top: 10px;
+				margin-bottom: 10px;
+				text-indent: 1em;
+				background-image: url(images/line.png);
+				background-repeat: no-repeat;
+			}
+			.wangzhan1{
+				float: left;
+				width: 956px;
+				background-color: white;
+			}
+			.li2{
+				float: left;
+			}
+			a.i2:link,a.i2:visited{
+				display: block;
+				padding: 8px;
+				text-decoration: none;
+				width: 170px;
+				color: #4682B4;
+				text-align: center;
+			}
+			.chaxun{
+				border: 0.1px solid #4682B4;
+				width: 650px;
+				float: left;
+				margin-top: 20px;
+			}
+			.chaxun1{
+				width: 362px;
+				float: left;
+				font-size: 15px;
+				font-weight: bold;
+				padding-top: 10px;
+				margin-bottom: 9px;
+				text-indent: 1em;
+			}
+			.li3{
+				background-color: #F7F7F7;
+				float: left;
+			}
+			a.i3:link,a.i3:visited{
+				display: block;
+				padding: 8px;
+				text-decoration: none;
+				width: 80px;
+				font-weight: bold;
+				color: black;
+				text-align: center;
+			}
+			a.i3:hover,a.i3:active{
+				color: #FFFFFF;
+				background-image: url(images/list_bg.png);
+			}
+			.chaxun2{
+				border-top: 0.1px solid #4682B4;
+				width: 630px;
+				float: left;
+				padding: 10px;
+				background-color: white;
+			}
+			.li4{
+				float: left;
+			}
+			a.i4:link,a.i4:visited{
+				display: block;
+				padding: 4px;
+				text-decoration: none;
+				color: black;
+				width: 80px;
+				text-align: center;
+			}
+			.news{
+				border: 0.1px solid #4682B4;
+				width: 293.8px;
+				float: left;
+				margin-top: 20px;
+				margin-left: 10px;
+			}
+			.news1{
+				width: 293.8px;
+				float: left;
+				font-size: 15px;
+				font-weight: bold;
+				padding-top: 10px;
+				margin-bottom: 9px;
+				text-indent: 1em;
+			}
+			.news2{
+				width: 293.8px;
+				float: left;
+				background-color: white;
+			}
+			.li5{
+				float: left;
+				font-size: 13px;
+				border-width: 0.1px;
+				border-top-style: dotted;
+			}
+			a.i5:link,a.i5:visited{
+				display: block;
+				padding: 7.5px;
+				text-decoration: none;
+				color: #4682B4;
+				width: 290px;
+			}
+			.bottom{
+				margin-top: 20px;
+				width: 937px;
+				float: left;
+			}
+			.bottom1{
+				width: 937px;
+				border: 0.1px solid #4682B4;
+				text-align: center;
+				padding: 10px;
+			}
+			.seven{
+				font-weight: bold;
+				margin-left: 25px;
+				float: left;
+				margin-top: 5px;
+			}
+			.bottom2{
+				width: 957px;
+				float: left;
+				margin-top: 20px;
+				text-align: center;
+			}
+			.li6{
+				float: left;
+				font-size: 13px;
+			}
+			a.i6:link,a.i6:visited{
+				display: block;
+				border: 0.1px solid grey;
+				margin: 4px;
+				padding: 2px;
+				color: #4682B4;
+				width: 15px;
+			}
+			.eight{
+				color: #4682B4;
+				text-decoration: none;
+			}
+			.bottom3{
+				margin-top: 50px;
+				margin-bottom: 20px;
+				text-align: center;
+				color: grey;
+				font-size: 13px;
+			}
+			.nine{
+				color: grey;
+				text-decoration: none;
+			}
+			#right{
+				border: 1px solid #F7F7F7;
+				float: left;
+				width: 270px;
+				height: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="left"> </div>
+		<div id="center">
+			<div class="one">
+				<div class="two">
+				<img src="images/logo.png">
+				</div>
+				<div class="three">
+					<form action="#" method="get">
+						城市选择：<select name="省">
+							<option value="河北" name="hebei">河北</option>
+							<option value="河南" name="henan">河南</option>
+							<option value="北京">北京</option>
+							<option value="天津">天津</option>
+							<option value="浙江">浙江</option>
+						</select>
+						<select name="市" id="hebei">
+							<option value="石家庄"">石家庄</option>
+							<option value="承德">承德</option>
+							<option value="唐山">唐山</option>
+							<option value="邯郸">邯郸</option>
+							<option value="秦皇岛">秦皇岛</option>
+						</select>
+						<input type="submit" name="查看天气" value="查看天气">
+					</form>
+				
+				</div>
+			</div>
+			<div class="four">
+				<ul>
+					<li class="li1"><a class="i" href="#">首页</a></li>
+					<li class="li1"><a class="i" href="list.html" target="_blank">国内天气</a></li>
+					<li class="li1"><a class="i" href="#">景点天气</a></li>
+					<li class="li1"><a class="i" href="#">PM2.5</a></li>
+					<li class="li1"><a class="i" href="#">天气新闻</a></li>
+				</ul>
+			</div>
+			<div>
+				<div class="tu"><a href="content.html" target="_blank"><img src="images/tianqi.png"></a></div>
+				<div class="five">
+					6月14日 星期三
+					<img src="images/sun.png">
+					32℃~22℃<br/>
+					白天：晴<br/>
+					夜间：多云<br/>
+					南风 1~2级
+				</div>
+				<div class="five">
+					6月15日 星期四
+					<img src="images/cloud.png">
+					32℃~23℃<br/>
+					白天：阴<br/>
+					夜间：阴<br/>
+					南风 1~2级
+				</div>
+				<div class="five">
+					6月16日 星期五
+					<img src="images/duoyun.png">
+					33℃~23℃<br/>
+					白天：多云<br/>
+					夜间：多云<br/>
+					南风 1~2级
+				</div>
+				<div class="five">
+					6月17日 星期六
+					<img src="images/duoyun.png">
+					33℃~23℃<br/>
+					白天：多云<br/>
+					夜间：多云<br/>
+					北风 1~2级
+				</div>
+				<div class="five">
+					6月18日 星期日
+					<img src="images/duoyun.png">
+					34℃~23℃<br/>
+					白天：多云<br/>
+					夜间：多云<br/>
+					北风 1~2级
+				</div>
+			</div>
+			<div class="shenghuo">
+				<div class="six"><span class="span1">石家庄今日生活指数</span><img src="images/line.png"></div>
+				<div>
+					<div class="shenghuo1 shenghuo0"><span class="span2">穿衣指数：<span class="span3">热</span></span><br/>适合穿T恤、短薄外套等夏季服装。</div>
+					<div class="shenghuo2 shenghuo0"><span class="span2">紫外线指数：<span class="span3">中等</span></span><br/>属中等强度紫外线辐射天气，外出时建议涂擦SPF高于15、PA+的防晒护肤品，戴帽子、太阳镜。</div>
+					<div class="shenghuo3 shenghuo0"><span class="span2">旅游指数：<span class="span3">较适宜</span></span><br/>天气晴朗，万里无云。较热但风稍大，能缓解些炎热的感觉。较适宜旅游，您仍可陶醉于大自然美好风光中。</div>
+					<div class="shenghuo4 shenghuo0"><span class="span2">舒适度指数：<span class="span3">很不舒适</span></span><br/>白天天气很好，但烈日炎炎您会感到很热，很不舒适。</div>
+					<div class="shenghuo5 shenghuo0"><span class="span2">晨练指数：<span class="span3">较适宜</span></span><br/>早晨气象条件较适宜晨练，但风力稍大，晨练时请注意先择避风的地点，避免迎风锻炼。</div>
+					<div class="shenghuo6 shenghuo0"><span class="span2">洗车指数：<span class="span3">不宜</span></span><br/>不宜洗车，未来24小时内由于，如果自此期间洗车，雨水和路上的泥水可能会再次弄脏您的爱车。</div>
+					<div class="shenghuo7 shenghuo0"><span class="span2">晾晒指数：<span class="span3">适宜</span></span><br/>万里无云，光照充足，适宜晾晒。赶紧把久未见阳光的衣物搬出来吸收一下太阳的味道吧！</div>
+					<div class="shenghuo8 shenghuo0"><span class="span2">息斯敏过敏气象指数：<span class="span3">少发</span></span><br/>暂无数据</div>
+				</div>
+			</div>
+			<div class="kuang">
+				<div class="wangzhan">气象相关网站</div>
+				<div class="wangzhan1">
+					<ul>
+						<li class="li2"><a class="i2" href="#">中国天气网</a></li>
+						<li class="li2"><a class="i2" href="#">中央气象台</a></li>
+						<li class="li2"><a class="i2" href="#">天气在线</a></li>
+						<li class="li2"><a class="i2" href="#">中国气象局</a></li>
+						<li class="li2"><a class="i2" href="#">世界天气预报</a></li>
+					</ul>
+				</div>
+				<div class="wangzhan1">
+					<ul>
+						<li class="li2"><a class="i2" href="#">天气预报</a></li>
+						<li class="li2"><a class="i2" href="#">中国地震网</a></li>
+						<li class="li2"><a class="i2" href="#">中国地震局</a></li>
+						<li class="li2"><a class="i2" href="#">中国台风网</a></li>
+						<li class="li2"><a class="i2" href="#">历史天气</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="chaxun">
+				<div class="chaxun1">天气预报查询</div>
+				<div>
+					<ul>
+						<li class="li3"><a class="i3" href="list.html" target="_blank">国内城市</a></li>
+						<li class="li3"><a class="i3" href="#">热门景点</a></li>
+						<li class="li3"><a class="i3" href="#">合作网站</a></li>
+					</ul>
+				</div>
+				<div class="chaxun2">
+					<ul>
+						<li class="li4"><a class="i4" href="#">北京天气</a></li>
+						<li class="li4"><a class="i4" href="#">杭州天气</a></li>
+						<li class="li4"><a class="i4" href="#">南京天气</a></li>
+						<li class="li4"><a class="i4" href="#">上海天气</a></li>
+						<li class="li4"><a class="i4" href="#">青岛天气</a></li>
+						<li class="li4"><a class="i4" href="#">武汉天气</a></li>
+						<li class="li4"><a class="i4" href="#">苏州天气</a></li>
+					</ul>
+					<ul>
+						<li class="li4"><a class="i4" href="#">深圳天气</a></li>
+						<li class="li4"><a class="i4" href="#">成都天气</a></li>
+						<li class="li4"><a class="i4" href="#">大连天气</a></li>
+						<li class="li4"><a class="i4" href="#">合肥天气</a></li>
+						<li class="li4"><a class="i4" href="#">郑州天气</a></li>
+						<li class="li4"><a class="i4" href="#">天津天气</a></li>
+						<li class="li4"><a class="i4" href="#">西安天气</a></li>
+					</ul>
+					<ul>
+						<li class="li4"><a class="i4" href="#">济南天气</a></li>
+						<li class="li4"><a class="i4" href="#">广州天气</a></li>
+						<li class="li4"><a class="i4" href="#">哈尔滨天气</a></li>
+						<li class="li4"><a class="i4" href="#">厦门天气</a></li>
+						<li class="li4"><a class="i4" href="#">沈阳天气</a></li>
+						<li class="li4"><a class="i4" href="#">重庆天气</a></li>
+					</ul>
+					<ul>
+						<li class="li4"><a class="i4" href="#">宁波天气</a></li>
+						<li class="li4"><a class="i4" href="#">无锡天气</a></li>
+						<li class="li4"><a class="i4" href="#">长沙天气</a></li>
+						<li class="li4"><a class="i4" href="#">长春天气</a></li>
+						<li class="li4"><a class="i4" href="#">常州天气</a></li>
+						<li class="li4"><a class="i4" href="#">昆明天气</a></li>
+						<li class="li4"><a class="i4" href="#">临沂天气</a></li>
+					</ul>
+					<ul>
+						<li class="li4"><a class="i4" href="#">南昌天气</a></li>
+						<li class="li4"><a class="i4" href="#">福州天气</a></li>
+						<li class="li4"><a class="i4" href="#">烟台天气</a></li>
+						<li class="li4"><a class="i4" href="content.html" target="_blank">石家庄天气</a></li>
+						<li class="li4"><a class="i4" href="#">温州天气</a></li>
+						<li class="li4"><a class="i4" href="#">香港天气</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="news">
+				<div class="news1">天气新闻</div>
+				<div class="news2">
+					<ul>
+						<li class="li5"><a class="i5" href="#">登陆也扎堆？疯狂台风大揭密！</a></li>
+						<li class="li5"><a class="i5" href="#">广东南雄一村庄遭暴雨冰雹袭击 致百余房屋尽毁</a></li>
+						<li class="li5"><a class="i5" href="#">“麦德姆”过境安徽携大风强降雨 60多万人受灾</a></li>
+						<li class="li5"><a class="i5" href="#">“麦德姆”25日17时10分登陆山东荣成</a></li>
+						<li class="li5"><a class="i5" href="#">暴雨蓝色预警：辽宁吉林等局地有大暴雨</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="bottom1">
+					<div class="seven">
+						按城市拼音首字母：
+					</div>
+					<ul>
+						<li class="li6"><a class="i6" href="#">A</a></li>
+						<li class="li6"><a class="i6" href="#">B</a></li>
+						<li class="li6"><a class="i6" href="#">C</a></li>
+						<li class="li6"><a class="i6" href="#">D</a></li>
+						<li class="li6"><a class="i6" href="#">E</a></li>
+						<li class="li6"><a class="i6" href="#">F</a></li>
+						<li class="li6"><a class="i6" href="#">G</a></li>
+						<li class="li6"><a class="i6" href="#">H</a></li>
+						<li class="li6"><a class="i6" href="#">I</a></li>
+						<li class="li6"><a class="i6" href="#">J</a></li>
+						<li class="li6"><a class="i6" href="#">K</a></li>
+						<li class="li6"><a class="i6" href="#">L</a></li>
+						<li class="li6"><a class="i6" href="#">M</a></li>
+						<li class="li6"><a class="i6" href="#">N</a></li>
+						<li class="li6"><a class="i6" href="#">O</a></li>
+						<li class="li6"><a class="i6" href="#">P</a></li>
+						<li class="li6"><a class="i6" href="#">Q</a></li>
+						<li class="li6"><a class="i6" href="#">R</a></li>
+						<li class="li6"><a class="i6" href="#">S</a></li>
+						<li class="li6"><a class="i6" href="#">T</a></li>
+						<li class="li6"><a class="i6" href="#">U</a></li>
+						<li class="li6"><a class="i6" href="#">V</a></li>
+						<li class="li6"><a class="i6" href="#">W</a></li>
+						<li class="li6"><a class="i6" href="#">X</a></li>
+						<li class="li6"><a class="i6" href="#">Y</a></li>
+						<li class="li6"><a class="i6" href="#">Z</a></li>
+					</ul>
+				</div>
+				<div class="bottom2">
+					搜狗<a class="eight" href="#">天气预报</a>提供权威，实时天气数据，包括<a class="eight" href="#">天气预报查询一周</a>，全国<a class="eight" href="#">天气预报15天查询</a>，为您生活出行提供更多便利。
+				</div>
+				<div class="bottom3">
+					<img src="images/lilogo.png"><a class="nine" href="#">关于我们</a>|<a class="nine" href="#">意见反馈</a>|<a class="nine" href="#">免责声明</a> Copyright @ 2016 Sogou.com.All Rights Reserved. 京ICP证050897号
+				</div>
+			</div>
+		</div>
+		<div id="right"> </div>
+	</body>
+</html>

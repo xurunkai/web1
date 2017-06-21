@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>列表页</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			body{
+				background-color: #F7F7F7;
+			}
+			#left{
+				border: 1px solid #F7F7F7;
+				float: left;
+				width: 270px;
+				height: 100%;
+			}
+			#center{
+				float: left;
+				width: 957px;
+			}
+			.one{
+				float: left;
+				width: 957px;
+				height: 60px;
+			}
+			.two{
+				float: left;
+				width: 150px;
+				height: 60px;
+				margin:20px;
+			}
+			.three{
+				margin-top: 30px;
+				margin-right: 200px;
+				float: right;
+				font-size: 20px;
+				text-align: center;
+				width: 400px;
+			}
+			form{
+				display: inline;
+			}
+			.four{
+				margin-top: 20px;
+				float: left;
+				width: 957px;
+				height: 39px;
+				background-image: url(images/list_bg1.png);
+			}
+			ul{
+				padding: 0px;
+				margin: 0px;
+				list-style-type: none;
+				overflow: hidden;
+			}
+			.li1{
+				float: left;
+				background-image: url(images/list_bg.png);
+			}
+			a.i:link,a.i:visited{
+				display: block;
+				padding: 8px;
+				text-decoration: none;
+				width: 100px;
+				font-weight: bold;
+				color: #FFFFFF;
+				text-align: center;
+			}
+			a.i:hover,a.i:active{
+				border-style: inset;
+				background-color: #4682B4;
+			}
+			.five{
+				margin-top: 10px;
+				font-size: 13px;
+				width: 957px;
+				float: left;
+			}
+			.list{
+				width: 957px;
+				border: 0.1px solid #4682B4;
+				margin-top: 10px;
+				float: left;
+			}
+			.list_title{
+				border-bottom: 0.1px solid #4682B4;
+				padding: 10px;
+				width: 937px;
+				font-size: 13px;
+				font-weight: bold;
+				float: left;
+			}
+			.list0{
+				border-width: 0.1px;
+				border-bottom-style: dotted;
+				float: left;
+				padding: 10px;
+				width: 937px;
+				background-color: white;
+			}
+			.listt{
+				width: 110px;
+				font-size: 15px;
+				font-weight: bold;
+				float: left;
+			}
+			.list1{
+				width: 827px;
+				float: left;
+				background-color: white;
+			}
+			.li2{
+				float: left;
+				font-size: 13px;
+			}
+			a.i2:link,a.i2:visited{
+				display: block;
+				padding: 4px;
+				text-decoration: none;
+				color: #4682B4;
+				width: 110px;
+				text-align: center;
+			}
+			.bottom{
+				margin-top: 20px;
+				width: 937px;
+				float: left;
+			}
+			.bottom1{
+				width: 937px;
+				border: 0.1px solid #4682B4;
+				text-align: center;
+				padding: 10px;
+			}
+			.seven{
+				font-weight: bold;
+				margin-left: 25px;
+				float: left;
+				margin-top: 5px;
+			}
+			.bottom2{
+				width: 957px;
+				float: left;
+				margin-top: 20px;
+				text-align: center;
+			}
+			.li6{
+				float: left;
+				font-size: 13px;
+			}
+			a.i6:link,a.i6:visited{
+				display: block;
+				border: 0.1px solid grey;
+				margin: 4px;
+				padding: 2px;
+				
+				width: 15px;
+			}
+			.eight{
+				color: #4682B4;
+				text-decoration: none;
+			}
+			.bottom3{
+				margin-top: 50px;
+				margin-bottom: 20px;
+				text-align: center;
+				color: grey;
+				font-size: 13px;
+			}
+			.nine{
+				color: grey;
+				text-decoration: none;
+			}
+			#right{
+				border: 1px solid #F7F7F7;
+				float: left;
+				width: 270px;
+				height: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="left"> </div>
+		<div id="center">
+			<div class="one">
+				<div class="two">
+				<img src="images/logo.png">
+				</div>
+				<div class="three">
+					<form action="#" method="get">
+						城市选择：<select name="省">
+							<option value="河北" name="hebei">河北</option>
+							<option value="河南" name="henan">河南</option>
+							<option value="北京">北京</option>
+							<option value="天津">天津</option>
+							<option value="浙江">浙江</option>
+						</select>
+						<select name="市" id="hebei">
+							<option value="石家庄"">石家庄</option>
+							<option value="承德">承德</option>
+							<option value="唐山">唐山</option>
+							<option value="邯郸">邯郸</option>
+							<option value="秦皇岛">秦皇岛</option>
+						</select>
+						<input type="submit" name="查看天气" value="查看天气">
+					</form>
+				
+				</div>
+			</div>
+			<div class="four">
+				<ul>
+					<li class="li1"><a class="i" href="index.html" target="_blank">首页</a></li>
+					<li class="li1"><a class="i" href="#">国内天气</a></li>
+					<li class="li1"><a class="i" href="#">景点天气</a></li>
+					<li class="li1"><a class="i" href="#">PM2.5</a></li>
+					<li class="li1"><a class="i" href="#">天气新闻</a></li>
+				</ul>
+			</div>
+			<div class="five">
+				当前位置：<a class="eight" href="index.html" target="_blank">首页</a>&gt;国内天气预报
+			</div>
+
+
+
+
+
+
+
+
+			<div class="list">
+				<div class="list_title">全国天气查询</div>
+				<div class="list0">
+					<div class="listt">北京天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="#">北京</a></li>
+							<li class="li2"><a class="i2" href="#">海淀</a></li>
+							<li class="li2"><a class="i2" href="#">朝阳</a></li>
+							<li class="li2"><a class="i2" href="#">顺义</a></li>
+							<li class="li2"><a class="i2" href="#">怀柔</a></li>
+							<li class="li2"><a class="i2" href="#">通州</a></li>
+							<li class="li2"><a class="i2" href="#">昌平</a></li>
+							<li class="li2"><a class="i2" href="#">延庆</a></li>
+							<li class="li2"><a class="i2" href="#">丰台</a></li>
+							<li class="li2"><a class="i2" href="#">石景山</a></li>
+							<li class="li2"><a class="i2" href="#">大兴</a></li>
+							<li class="li2"><a class="i2" href="#">房山</a></li>
+							<li class="li2"><a class="i2" href="#">密云</a></li>
+							<li class="li2"><a class="i2" href="#">门头沟</a></li>
+							<li class="li2"><a class="i2" href="#">平谷</a></li>
+							<li class="li2"><a class="i2" href="#">东城区</a></li>
+							<li class="li2"><a class="i2" href="#">西城区</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list0">
+					<div class="listt">上海天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="#">伤害</a></li>
+							<li class="li2"><a class="i2" href="#">闵行</a></li>
+							<li class="li2"><a class="i2" href="#">宝山</a></li>
+							<li class="li2"><a class="i2" href="#">嘉定</a></li>
+							<li class="li2"><a class="i2" href="#">南汇</a></li>
+							<li class="li2"><a class="i2" href="#">金山</a></li>
+							<li class="li2"><a class="i2" href="#">青浦</a></li>
+							<li class="li2"><a class="i2" href="#">松江</a></li>
+							<li class="li2"><a class="i2" href="#">奉贤</a></li>
+							<li class="li2"><a class="i2" href="#">崇明</a></li>
+							<li class="li2"><a class="i2" href="#">徐家汇</a></li>
+							<li class="li2"><a class="i2" href="#">浦东</a></li>
+							<li class="li2"><a class="i2" href="#">郊区</a></li>
+							<li class="li2"><a class="i2" href="#">长宁区</a></li>
+							<li class="li2"><a class="i2" href="#">虹口</a></li>
+							<li class="li2"><a class="i2" href="#">黄浦</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list0">
+					<div class="listt">天津天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="#">天津</a></li>
+							<li class="li2"><a class="i2" href="#">武清</a></li>
+							<li class="li2"><a class="i2" href="#">宝坻</a></li>
+							<li class="li2"><a class="i2" href="#">东丽</a></li>
+							<li class="li2"><a class="i2" href="#">西青</a></li>
+							<li class="li2"><a class="i2" href="#">北辰</a></li>
+							<li class="li2"><a class="i2" href="#">宁河</a></li>
+							<li class="li2"><a class="i2" href="#">汉沽</a></li>
+							<li class="li2"><a class="i2" href="#">静海</a></li>
+							<li class="li2"><a class="i2" href="#">津南</a></li>
+							<li class="li2"><a class="i2" href="#">塘沽</a></li>
+							<li class="li2"><a class="i2" href="#">大港</a></li>
+							<li class="li2"><a class="i2" href="#">蓟县</a></li>
+							<li class="li2"><a class="i2" href="#">红桥区</a></li>
+							<li class="li2"><a class="i2" href="#">河西区</a></li>
+							<li class="li2"><a class="i2" href="#">河东区</a></li>
+							<li class="li2"><a class="i2" href="#">河北区</a></li>
+							<li class="li2"><a class="i2" href="#">和平</a></li>
+							<li class="li2"><a class="i2" href="#">南开</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list0">
+					<div class="listt">重庆天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="#">重庆</a></li>
+							<li class="li2"><a class="i2" href="#">永川</a></li>
+							<li class="li2"><a class="i2" href="#">合川</a></li>
+							<li class="li2"><a class="i2" href="#">南川</a></li>
+							<li class="li2"><a class="i2" href="#">江津</a></li>
+							<li class="li2"><a class="i2" href="#">万盛</a></li>
+							<li class="li2"><a class="i2" href="#">渝北</a></li>
+							<li class="li2"><a class="i2" href="#">北碚</a></li>
+							<li class="li2"><a class="i2" href="#">巴南</a></li>
+							<li class="li2"><a class="i2" href="#">长寿</a></li>
+							<li class="li2"><a class="i2" href="#">黔江</a></li>
+							<li class="li2"><a class="i2" href="#">万州</a></li>
+							<li class="li2"><a class="i2" href="#">涪陵</a></li>
+							<li class="li2"><a class="i2" href="#">开县</a></li>
+							<li class="li2"><a class="i2" href="#">城口</a></li>
+							<li class="li2"><a class="i2" href="#">云阳</a></li>
+							<li class="li2"><a class="i2" href="#">巫溪</a></li>
+							<li class="li2"><a class="i2" href="#">奉节</a></li>
+							<li class="li2"><a class="i2" href="#">巫山</a></li>
+							<li class="li2"><a class="i2" href="#">潼南</a></li>
+							<li class="li2"><a class="i2" href="#">垫江</a></li>
+							<li class="li2"><a class="i2" href="#">梁平</a></li>
+							<li class="li2"><a class="i2" href="#">忠县</a></li>
+							<li class="li2"><a class="i2" href="#">石柱</a></li>
+							<li class="li2"><a class="i2" href="#">大足</a></li>
+							<li class="li2"><a class="i2" href="#">荣昌</a></li>
+							<li class="li2"><a class="i2" href="#">铜梁</a></li>
+							<li class="li2"><a class="i2" href="#">璧山</a></li>
+							<li class="li2"><a class="i2" href="#">丰都</a></li>
+							<li class="li2"><a class="i2" href="#">武隆</a></li>
+							<li class="li2"><a class="i2" href="#">彭水</a></li>
+							<li class="li2"><a class="i2" href="#">綦江</a></li>
+							<li class="li2"><a class="i2" href="#">酉阳</a></li>
+							<li class="li2"><a class="i2" href="#">秀山</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list0">
+					<div class="listt">吉林天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="#">长春</a></li>
+							<li class="li2"><a class="i2" href="#">吉林</a></li>
+							<li class="li2"><a class="i2" href="#">延边</a></li>
+							<li class="li2"><a class="i2" href="#">四平</a></li>
+							<li class="li2"><a class="i2" href="#">通化</a></li>
+							<li class="li2"><a class="i2" href="#">白城</a></li>
+							<li class="li2"><a class="i2" href="#">辽源</a></li>
+							<li class="li2"><a class="i2" href="#">松原</a></li>
+							<li class="li2"><a class="i2" href="#">白山</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list0">
+					<div class="listt">辽宁天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="#">沈阳</a></li>
+							<li class="li2"><a class="i2" href="#">大连</a></li>
+							<li class="li2"><a class="i2" href="#">鞍山</a></li>
+							<li class="li2"><a class="i2" href="#">抚顺</a></li>
+							<li class="li2"><a class="i2" href="#">本溪</a></li>
+							<li class="li2"><a class="i2" href="#">丹东</a></li>
+							<li class="li2"><a class="i2" href="#">锦州</a></li>
+							<li class="li2"><a class="i2" href="#">营口</a></li>
+							<li class="li2"><a class="i2" href="#">阜新</a></li>
+							<li class="li2"><a class="i2" href="#">辽阳</a></li>
+							<li class="li2"><a class="i2" href="#">铁岭</a></li>
+							<li class="li2"><a class="i2" href="#">朝阳</a></li>
+							<li class="li2"><a class="i2" href="#">盘锦</a></li>
+							<li class="li2"><a class="i2" href="#">葫芦岛</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list0">
+					<div class="listt">河北天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="content.html" target="_blank">石家庄</a></li>
+							<li class="li2"><a class="i2" href="#">保定</a></li>
+							<li class="li2"><a class="i2" href="#">张家口</a></li>
+							<li class="li2"><a class="i2" href="#">承德</a></li>
+							<li class="li2"><a class="i2" href="#">唐山</a></li>
+							<li class="li2"><a class="i2" href="#">廊坊</a></li>
+							<li class="li2"><a class="i2" href="#">沧州</a></li>
+							<li class="li2"><a class="i2" href="#">衡水</a></li>
+							<li class="li2"><a class="i2" href="#">邢台</a></li>
+							<li class="li2"><a class="i2" href="#">邯郸</a></li>
+							<li class="li2"><a class="i2" href="#">秦皇岛</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list0">
+					<div class="listt">山西天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="#">太原</a></li>
+							<li class="li2"><a class="i2" href="#">大同</a></li>
+							<li class="li2"><a class="i2" href="#">阳泉</a></li>
+							<li class="li2"><a class="i2" href="#">晋中</a></li>
+							<li class="li2"><a class="i2" href="#">长治</a></li>
+							<li class="li2"><a class="i2" href="#">晋城</a></li>
+							<li class="li2"><a class="i2" href="#">临汾</a></li>
+							<li class="li2"><a class="i2" href="#">运城</a></li>
+							<li class="li2"><a class="i2" href="#">朔州</a></li>
+							<li class="li2"><a class="i2" href="#">忻州</a></li>
+							<li class="li2"><a class="i2" href="#">吕梁</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list0">
+					<div class="listt">陕西天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="#">西安</a></li>
+							<li class="li2"><a class="i2" href="#">咸阳</a></li>
+							<li class="li2"><a class="i2" href="#">延安</a></li>
+							<li class="li2"><a class="i2" href="#">榆林</a></li>
+							<li class="li2"><a class="i2" href="#">渭南</a></li>
+							<li class="li2"><a class="i2" href="#">商洛</a></li>
+							<li class="li2"><a class="i2" href="#">安康</a></li>
+							<li class="li2"><a class="i2" href="#">汉中</a></li>
+							<li class="li2"><a class="i2" href="#">宝鸡</a></li>
+							<li class="li2"><a class="i2" href="#">铜川</a></li>
+							<li class="li2"><a class="i2" href="#">杨凌</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list0">
+					<div class="listt">山东天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="#">济南</a></li>
+							<li class="li2"><a class="i2" href="#">青岛</a></li>
+							<li class="li2"><a class="i2" href="#">淄博</a></li>
+							<li class="li2"><a class="i2" href="#">德州</a></li>
+							<li class="li2"><a class="i2" href="#">烟台</a></li>
+							<li class="li2"><a class="i2" href="#">潍坊</a></li>
+							<li class="li2"><a class="i2" href="#">济宁</a></li>
+							<li class="li2"><a class="i2" href="#">泰安</a></li>
+							<li class="li2"><a class="i2" href="#">临沂</a></li>
+							<li class="li2"><a class="i2" href="#">菏泽</a></li>
+							<li class="li2"><a class="i2" href="#">滨州</a></li>
+							<li class="li2"><a class="i2" href="#">东营</a></li>
+							<li class="li2"><a class="i2" href="#">威海</a></li>
+							<li class="li2"><a class="i2" href="#">枣庄</a></li>
+							<li class="li2"><a class="i2" href="#">日照</a></li>
+							<li class="li2"><a class="i2" href="#">莱芜</a></li>
+							<li class="li2"><a class="i2" href="#">聊城</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list0">
+					<div class="listt">新疆天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="#">乌鲁木齐</a></li>
+							<li class="li2"><a class="i2" href="#">克拉玛依</a></li>
+							<li class="li2"><a class="i2" href="#">石河子</a></li>
+							<li class="li2"><a class="i2" href="#">昌吉</a></li>
+							<li class="li2"><a class="i2" href="#">吐鲁番</a></li>
+							<li class="li2"><a class="i2" href="#">巴州</a></li>
+							<li class="li2"><a class="i2" href="#">阿拉尔</a></li>
+							<li class="li2"><a class="i2" href="#">阿克苏</a></li>
+							<li class="li2"><a class="i2" href="#">喀什</a></li>
+							<li class="li2"><a class="i2" href="#">伊犁</a></li>
+							<li class="li2"><a class="i2" href="#">塔城</a></li>
+							<li class="li2"><a class="i2" href="#">哈密</a></li>
+							<li class="li2"><a class="i2" href="#">和田</a></li>
+							<li class="li2"><a class="i2" href="#">阿勒泰</a></li>
+							<li class="li2"><a class="i2" href="#">克州</a></li>
+							<li class="li2"><a class="i2" href="#">博州</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list0">
+					<div class="listt">西藏天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="#">拉萨</a></li>
+							<li class="li2"><a class="i2" href="#">日喀则</a></li>
+							<li class="li2"><a class="i2" href="#">山南</a></li>
+							<li class="li2"><a class="i2" href="#">林芝</a></li>
+							<li class="li2"><a class="i2" href="#">昌都</a></li>
+							<li class="li2"><a class="i2" href="#">那曲</a></li>
+							<li class="li2"><a class="i2" href="#">阿里</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list0">
+					<div class="listt">青海天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="#">西宁</a></li>
+							<li class="li2"><a class="i2" href="#">海东</a></li>
+							<li class="li2"><a class="i2" href="#">黄南</a></li>
+							<li class="li2"><a class="i2" href="#">海南</a></li>
+							<li class="li2"><a class="i2" href="#">果洛</a></li>
+							<li class="li2"><a class="i2" href="#">玉树</a></li>
+							<li class="li2"><a class="i2" href="#">海西</a></li>
+							<li class="li2"><a class="i2" href="#">海北</a></li>
+							<li class="li2"><a class="i2" href="#">格尔木</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list0">
+					<div class="listt">甘肃天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="#">兰州</a></li>
+							<li class="li2"><a class="i2" href="#">定西</a></li>
+							<li class="li2"><a class="i2" href="#">平凉</a></li>
+							<li class="li2"><a class="i2" href="#">庆阳</a></li>
+							<li class="li2"><a class="i2" href="#">武威</a></li>
+							<li class="li2"><a class="i2" href="#">金昌</a></li>
+							<li class="li2"><a class="i2" href="#">张掖</a></li>
+							<li class="li2"><a class="i2" href="#">酒泉</a></li>
+							<li class="li2"><a class="i2" href="#">天水</a></li>
+							<li class="li2"><a class="i2" href="#">陇南</a></li>
+							<li class="li2"><a class="i2" href="#">临夏</a></li>
+							<li class="li2"><a class="i2" href="#">甘南</a></li>
+							<li class="li2"><a class="i2" href="#">白银</a></li>
+							<li class="li2"><a class="i2" href="#">嘉峪关</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list0">
+					<div class="listt">宁夏天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="#">银川</a></li>
+							<li class="li2"><a class="i2" href="#">石嘴山</a></li>
+							<li class="li2"><a class="i2" href="#">吴忠</a></li>
+							<li class="li2"><a class="i2" href="#">固原</a></li>
+							<li class="li2"><a class="i2" href="#">中卫</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list0">
+					<div class="listt">河南天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="#">郑州</a></li>
+							<li class="li2"><a class="i2" href="#">安阳</a></li>
+							<li class="li2"><a class="i2" href="#">新乡</a></li>
+							<li class="li2"><a class="i2" href="#">许昌</a></li>
+							<li class="li2"><a class="i2" href="#">平顶山</a></li>
+							<li class="li2"><a class="i2" href="#">信阳</a></li>
+							<li class="li2"><a class="i2" href="#">南阳</a></li>
+							<li class="li2"><a class="i2" href="#">开封</a></li>
+							<li class="li2"><a class="i2" href="#">洛阳</a></li>
+							<li class="li2"><a class="i2" href="#">商丘</a></li>
+							<li class="li2"><a class="i2" href="#">焦作</a></li>
+							<li class="li2"><a class="i2" href="#">鹤壁</a></li>
+							<li class="li2"><a class="i2" href="#">濮阳</a></li>
+							<li class="li2"><a class="i2" href="#">周口</a></li>
+							<li class="li2"><a class="i2" href="#">漯河</a></li>
+							<li class="li2"><a class="i2" href="#">驻马店</a></li>
+							<li class="li2"><a class="i2" href="#">三门峡</a></li>
+							<li class="li2"><a class="i2" href="#">济源</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list0">
+					<div class="listt">黑龙江天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="#">哈尔滨</a></li>
+							<li class="li2"><a class="i2" href="#">齐齐哈尔</a></li>
+							<li class="li2"><a class="i2" href="#">牡丹江</a></li>
+							<li class="li2"><a class="i2" href="#">佳木斯</a></li>
+							<li class="li2"><a class="i2" href="#">绥化</a></li>
+							<li class="li2"><a class="i2" href="#">黑河</a></li>
+							<li class="li2"><a class="i2" href="#">大兴安岭</a></li>
+							<li class="li2"><a class="i2" href="#">伊春</a></li>
+							<li class="li2"><a class="i2" href="#">大庆</a></li>
+							<li class="li2"><a class="i2" href="#">七台河</a></li>
+							<li class="li2"><a class="i2" href="#">鸡西</a></li>
+							<li class="li2"><a class="i2" href="#">鹤岗</a></li>
+							<li class="li2"><a class="i2" href="#">双鸭山</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list0">
+					<div class="listt">江苏天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="#">南京</a></li>
+							<li class="li2"><a class="i2" href="#">无锡</a></li>
+							<li class="li2"><a class="i2" href="#">镇江</a></li>
+							<li class="li2"><a class="i2" href="#">苏州</a></li>
+							<li class="li2"><a class="i2" href="#">南通</a></li>
+							<li class="li2"><a class="i2" href="#">扬州</a></li>
+							<li class="li2"><a class="i2" href="#">盐城</a></li>
+							<li class="li2"><a class="i2" href="#">徐州</a></li>
+							<li class="li2"><a class="i2" href="#">淮安</a></li>
+							<li class="li2"><a class="i2" href="#">连云港</a></li>
+							<li class="li2"><a class="i2" href="#">常州</a></li>
+							<li class="li2"><a class="i2" href="#">泰州</a></li>
+							<li class="li2"><a class="i2" href="#">宿迁</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list0">
+					<div class="listt">湖北天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="#">武汉</a></li>
+							<li class="li2"><a class="i2" href="#">襄阳</a></li>
+							<li class="li2"><a class="i2" href="#">鄂州</a></li>
+							<li class="li2"><a class="i2" href="#">孝感</a></li>
+							<li class="li2"><a class="i2" href="#">黄冈</a></li>
+							<li class="li2"><a class="i2" href="#">黄石</a></li>
+							<li class="li2"><a class="i2" href="#">咸宁</a></li>
+							<li class="li2"><a class="i2" href="#">荆州</a></li>
+							<li class="li2"><a class="i2" href="#">宜昌</a></li>
+							<li class="li2"><a class="i2" href="#">恩施</a></li>
+							<li class="li2"><a class="i2" href="#">十堰</a></li>
+							<li class="li2"><a class="i2" href="#">神农架</a></li>
+							<li class="li2"><a class="i2" href="#">随州</a></li>
+							<li class="li2"><a class="i2" href="#">荆门</a></li>
+							<li class="li2"><a class="i2" href="#">天门</a></li>
+							<li class="li2"><a class="i2" href="#">仙桃</a></li>
+							<li class="li2"><a class="i2" href="#">潜江</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list0">
+					<div class="listt">浙江天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="#">杭州</a></li>
+							<li class="li2"><a class="i2" href="#">湖州</a></li>
+							<li class="li2"><a class="i2" href="#">嘉兴</a></li>
+							<li class="li2"><a class="i2" href="#">宁波</a></li>
+							<li class="li2"><a class="i2" href="#">绍兴</a></li>
+							<li class="li2"><a class="i2" href="#">台州</a></li>
+							<li class="li2"><a class="i2" href="#">温州</a></li>
+							<li class="li2"><a class="i2" href="#">丽水</a></li>
+							<li class="li2"><a class="i2" href="#">金华</a></li>
+							<li class="li2"><a class="i2" href="#">衢州</a></li>
+							<li class="li2"><a class="i2" href="#">舟山</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list0">
+					<div class="listt">安徽天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="#">合肥</a></li>
+							<li class="li2"><a class="i2" href="#">蚌埠</a></li>
+							<li class="li2"><a class="i2" href="#">芜湖</a></li>
+							<li class="li2"><a class="i2" href="#">淮南</a></li>
+							<li class="li2"><a class="i2" href="#">马鞍山</a></li>
+							<li class="li2"><a class="i2" href="#">安庆</a></li>
+							<li class="li2"><a class="i2" href="#">宿州</a></li>
+							<li class="li2"><a class="i2" href="#">阜阳</a></li>
+							<li class="li2"><a class="i2" href="#">毫州</a></li>
+							<li class="li2"><a class="i2" href="#">黄山</a></li>
+							<li class="li2"><a class="i2" href="#">滁州</a></li>
+							<li class="li2"><a class="i2" href="#">淮北</a></li>
+							<li class="li2"><a class="i2" href="#">铜陵</a></li>
+							<li class="li2"><a class="i2" href="#">宣城</a></li>
+							<li class="li2"><a class="i2" href="#">六安</a></li>
+							<li class="li2"><a class="i2" href="#">巢湖</a></li>
+							<li class="li2"><a class="i2" href="#">池州</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list0">
+					<div class="listt">福建天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="#">福州</a></li>
+							<li class="li2"><a class="i2" href="#">厦门</a></li>
+							<li class="li2"><a class="i2" href="#">宁德</a></li>
+							<li class="li2"><a class="i2" href="#">莆田</a></li>
+							<li class="li2"><a class="i2" href="#">泉州</a></li>
+							<li class="li2"><a class="i2" href="#">漳州</a></li>
+							<li class="li2"><a class="i2" href="#">龙岩</a></li>
+							<li class="li2"><a class="i2" href="#">三明</a></li>
+							<li class="li2"><a class="i2" href="#">南平</a></li>
+							<li class="li2"><a class="i2" href="#">钓鱼岛</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list0">
+					<div class="listt">江西天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="#">南昌</a></li>
+							<li class="li2"><a class="i2" href="#">九江</a></li>
+							<li class="li2"><a class="i2" href="#">上饶</a></li>
+							<li class="li2"><a class="i2" href="#">抚州</a></li>
+							<li class="li2"><a class="i2" href="#">宜春</a></li>
+							<li class="li2"><a class="i2" href="#">吉安</a></li>
+							<li class="li2"><a class="i2" href="#">赣州</a></li>
+							<li class="li2"><a class="i2" href="#">景德镇</a></li>
+							<li class="li2"><a class="i2" href="#">萍乡</a></li>
+							<li class="li2"><a class="i2" href="#">新余</a></li>
+							<li class="li2"><a class="i2" href="#">鹰潭</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list0">
+					<div class="listt">湖南天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="#">长沙</a></li>
+							<li class="li2"><a class="i2" href="#">湘潭</a></li>
+							<li class="li2"><a class="i2" href="#">株洲</a></li>
+							<li class="li2"><a class="i2" href="#">衡阳</a></li>
+							<li class="li2"><a class="i2" href="#">郴洲</a></li>
+							<li class="li2"><a class="i2" href="#">常德</a></li>
+							<li class="li2"><a class="i2" href="#">益阳</a></li>
+							<li class="li2"><a class="i2" href="#">娄底</a></li>
+							<li class="li2"><a class="i2" href="#">邵阳</a></li>
+							<li class="li2"><a class="i2" href="#">岳阳</a></li>
+							<li class="li2"><a class="i2" href="#">张家界</a></li>
+							<li class="li2"><a class="i2" href="#">怀化</a></li>
+							<li class="li2"><a class="i2" href="#">永州</a></li>
+							<li class="li2"><a class="i2" href="#">湘西</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list0">
+					<div class="listt">贵州天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="#">贵阳</a></li>
+							<li class="li2"><a class="i2" href="#">遵义</a></li>
+							<li class="li2"><a class="i2" href="#">安顺</a></li>
+							<li class="li2"><a class="i2" href="#">黔南</a></li>
+							<li class="li2"><a class="i2" href="#">黔东南</a></li>
+							<li class="li2"><a class="i2" href="#">铜仁</a></li>
+							<li class="li2"><a class="i2" href="#">毕节</a></li>
+							<li class="li2"><a class="i2" href="#">六盘水</a></li>
+							<li class="li2"><a class="i2" href="#">黔西南</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list0">
+					<div class="listt">四川天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="#">成都</a></li>
+							<li class="li2"><a class="i2" href="#">攀枝花</a></li>
+							<li class="li2"><a class="i2" href="#">自贡</a></li>
+							<li class="li2"><a class="i2" href="#">绵阳</a></li>
+							<li class="li2"><a class="i2" href="#">南充</a></li>
+							<li class="li2"><a class="i2" href="#">达州</a></li>
+							<li class="li2"><a class="i2" href="#">遂宁</a></li>
+							<li class="li2"><a class="i2" href="#">广安</a></li>
+							<li class="li2"><a class="i2" href="#">巴中</a></li>
+							<li class="li2"><a class="i2" href="#">泸州</a></li>
+							<li class="li2"><a class="i2" href="#">宜宾</a></li>
+							<li class="li2"><a class="i2" href="#">内江</a></li>
+							<li class="li2"><a class="i2" href="#">资阳</a></li>
+							<li class="li2"><a class="i2" href="#">乐山</a></li>
+							<li class="li2"><a class="i2" href="#">眉山</a></li>
+							<li class="li2"><a class="i2" href="#">凉山</a></li>
+							<li class="li2"><a class="i2" href="#">雅安</a></li>
+							<li class="li2"><a class="i2" href="#">甘孜</a></li>
+							<li class="li2"><a class="i2" href="#">阿坝</a></li>
+							<li class="li2"><a class="i2" href="#">德阳</a></li>
+							<li class="li2"><a class="i2" href="#">广元</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list0">
+					<div class="listt">广东天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="#">广州</a></li>
+							<li class="li2"><a class="i2" href="#">韶关</a></li>
+							<li class="li2"><a class="i2" href="#">惠州</a></li>
+							<li class="li2"><a class="i2" href="#">梅州</a></li>
+							<li class="li2"><a class="i2" href="#">汕头</a></li>
+							<li class="li2"><a class="i2" href="#">深圳</a></li>
+							<li class="li2"><a class="i2" href="#">珠海</a></li>
+							<li class="li2"><a class="i2" href="#">佛山</a></li>
+							<li class="li2"><a class="i2" href="#">肇庆</a></li>
+							<li class="li2"><a class="i2" href="#">湛江</a></li>
+							<li class="li2"><a class="i2" href="#">江门</a></li>
+							<li class="li2"><a class="i2" href="#">河源</a></li>
+							<li class="li2"><a class="i2" href="#">清远</a></li>
+							<li class="li2"><a class="i2" href="#">云浮</a></li>
+							<li class="li2"><a class="i2" href="#">潮州</a></li>
+							<li class="li2"><a class="i2" href="#">东莞</a></li>
+							<li class="li2"><a class="i2" href="#">中山</a></li>
+							<li class="li2"><a class="i2" href="#">阳江</a></li>
+							<li class="li2"><a class="i2" href="#">揭阳</a></li>
+							<li class="li2"><a class="i2" href="#">茂名</a></li>
+							<li class="li2"><a class="i2" href="#">汕尾</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list0">
+					<div class="listt">云南天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="#">昆明</a></li>
+							<li class="li2"><a class="i2" href="#">大理</a></li>
+							<li class="li2"><a class="i2" href="#">红河</a></li>
+							<li class="li2"><a class="i2" href="#">曲靖</a></li>
+							<li class="li2"><a class="i2" href="#">保山</a></li>
+							<li class="li2"><a class="i2" href="#">文山</a></li>
+							<li class="li2"><a class="i2" href="#">玉溪</a></li>
+							<li class="li2"><a class="i2" href="#">楚雄</a></li>
+							<li class="li2"><a class="i2" href="#">普洱</a></li>
+							<li class="li2"><a class="i2" href="#">昭通</a></li>
+							<li class="li2"><a class="i2" href="#">临沧</a></li>
+							<li class="li2"><a class="i2" href="#">怒江</a></li>
+							<li class="li2"><a class="i2" href="#">迪庆</a></li>
+							<li class="li2"><a class="i2" href="#">丽江</a></li>
+							<li class="li2"><a class="i2" href="#">德宏</a></li>
+							<li class="li2"><a class="i2" href="#">西双版纳</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list0">
+					<div class="listt">广西天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="#">南宁</a></li>
+							<li class="li2"><a class="i2" href="#">崇左</a></li>
+							<li class="li2"><a class="i2" href="#">柳州</a></li>
+							<li class="li2"><a class="i2" href="#">来宾</a></li>
+							<li class="li2"><a class="i2" href="#">桂林</a></li>
+							<li class="li2"><a class="i2" href="#">梧州</a></li>
+							<li class="li2"><a class="i2" href="#">贺州</a></li>
+							<li class="li2"><a class="i2" href="#">贵港</a></li>
+							<li class="li2"><a class="i2" href="#">玉林</a></li>
+							<li class="li2"><a class="i2" href="#">百色</a></li>
+							<li class="li2"><a class="i2" href="#">钦州</a></li>
+							<li class="li2"><a class="i2" href="#">河池</a></li>
+							<li class="li2"><a class="i2" href="#">北海</a></li>
+							<li class="li2"><a class="i2" href="#">防城港</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list0">
+					<div class="listt">海南天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="#">海口</a></li>
+							<li class="li2"><a class="i2" href="#">三亚</a></li>
+							<li class="li2"><a class="i2" href="#">东方</a></li>
+							<li class="li2"><a class="i2" href="#">临高</a></li>
+							<li class="li2"><a class="i2" href="#">澄迈</a></li>
+							<li class="li2"><a class="i2" href="#">儋州</a></li>
+							<li class="li2"><a class="i2" href="#">昌江</a></li>
+							<li class="li2"><a class="i2" href="#">白沙</a></li>
+							<li class="li2"><a class="i2" href="#">琼中</a></li>
+							<li class="li2"><a class="i2" href="#">定安</a></li>
+							<li class="li2"><a class="i2" href="#">屯昌</a></li>
+							<li class="li2"><a class="i2" href="#">琼海</a></li>
+							<li class="li2"><a class="i2" href="#">文昌</a></li>
+							<li class="li2"><a class="i2" href="#">保亭</a></li>
+							<li class="li2"><a class="i2" href="#">万宁</a></li>
+							<li class="li2"><a class="i2" href="#">陵水</a></li>
+							<li class="li2"><a class="i2" href="#">西沙</a></li>
+							<li class="li2"><a class="i2" href="#">南沙岛</a></li>
+							<li class="li2"><a class="i2" href="#">乐东</a></li>
+							<li class="li2"><a class="i2" href="#">五指山</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list0">
+					<div class="listt">香港天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="#">香港</a></li>
+							<li class="li2"><a class="i2" href="#">九龙</a></li>
+							<li class="li2"><a class="i2" href="#">新界</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list0">
+					<div class="listt">澳门天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="#">澳门</a></li>
+							<li class="li2"><a class="i2" href="#">氹仔岛</a></li>
+							<li class="li2"><a class="i2" href="#">路环岛</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list0">
+					<div class="listt">台湾天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="#">台北</a></li>
+							<li class="li2"><a class="i2" href="#">高雄</a></li>
+							<li class="li2"><a class="i2" href="#">台中</a></li>
+							<li class="li2"><a class="i2" href="#">台湾</a></li>
+							<li class="li2"><a class="i2" href="#">新北</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="list0">
+					<div class="listt">内蒙古天气</div>
+					<div class="list1">
+						<ul>
+							<li class="li2"><a class="i2" href="#">呼和浩特</a></li>
+							<li class="li2"><a class="i2" href="#">包头</a></li>
+							<li class="li2"><a class="i2" href="#">乌海</a></li>
+							<li class="li2"><a class="i2" href="#">乌兰察布</a></li>
+							<li class="li2"><a class="i2" href="#">通辽</a></li>
+							<li class="li2"><a class="i2" href="#">赤峰</a></li>
+							<li class="li2"><a class="i2" href="#">鄂尔多斯</a></li>
+							<li class="li2"><a class="i2" href="#">巴彦淖尔</a></li>
+							<li class="li2"><a class="i2" href="#">锡林郭勒</a></li>
+							<li class="li2"><a class="i2" href="#">呼伦贝尔</a></li>
+							<li class="li2"><a class="i2" href="#">兴安盟</a></li>
+							<li class="li2"><a class="i2" href="#">阿拉善盟</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="bottom1">
+					<div class="seven">
+						按城市拼音首字母：
+					</div>
+					<ul>
+						<li class="li6"><a class="i6" href="#">A</a></li>
+						<li class="li6"><a class="i6" href="#">B</a></li>
+						<li class="li6"><a class="i6" href="#">C</a></li>
+						<li class="li6"><a class="i6" href="#">D</a></li>
+						<li class="li6"><a class="i6" href="#">E</a></li>
+						<li class="li6"><a class="i6" href="#">F</a></li>
+						<li class="li6"><a class="i6" href="#">G</a></li>
+						<li class="li6"><a class="i6" href="#">H</a></li>
+						<li class="li6"><a class="i6" href="#">I</a></li>
+						<li class="li6"><a class="i6" href="#">J</a></li>
+						<li class="li6"><a class="i6" href="#">K</a></li>
+						<li class="li6"><a class="i6" href="#">L</a></li>
+						<li class="li6"><a class="i6" href="#">M</a></li>
+						<li class="li6"><a class="i6" href="#">N</a></li>
+						<li class="li6"><a class="i6" href="#">O</a></li>
+						<li class="li6"><a class="i6" href="#">P</a></li>
+						<li class="li6"><a class="i6" href="#">Q</a></li>
+						<li class="li6"><a class="i6" href="#">R</a></li>
+						<li class="li6"><a class="i6" href="#">S</a></li>
+						<li class="li6"><a class="i6" href="#">T</a></li>
+						<li class="li6"><a class="i6" href="#">U</a></li>
+						<li class="li6"><a class="i6" href="#">V</a></li>
+						<li class="li6"><a class="i6" href="#">W</a></li>
+						<li class="li6"><a class="i6" href="#">X</a></li>
+						<li class="li6"><a class="i6" href="#">Y</a></li>
+						<li class="li6"><a class="i6" href="#">Z</a></li>
+					</ul>
+				</div>
+				<div class="bottom2">
+					搜狗<a class="eight" href="#">天气预报</a>提供权威，实时天气数据，包括<a class="eight" href="#">天气预报查询一周</a>，全国<a class="eight" href="#">天气预报15天查询</a>，为您生活出行提供更多便利。
+				</div>
+				<div class="bottom3">
+					<img src="images/lilogo.png"><a class="nine" href="#">关于我们</a>|<a class="nine" href="#">意见反馈</a>|<a class="nine" href="#">免责声明</a> Copyright @ 2016 Sogou.com.All Rights Reserved. 京ICP证050897号
+				</div>
+			</div>
+		</div>
+		<div id="right"> </div>
+	</body>
+</html>
